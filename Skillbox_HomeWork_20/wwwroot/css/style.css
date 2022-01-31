@@ -1,0 +1,81 @@
+:root {
+    --main-border-color: #50BBED;
+    --main-background-color: #f5f8ea;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.body {
+  height: 100%;
+  background-color:  var(--main-background-color);
+}
+
+.container {
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 150px; 
+  padding-right: 150px;
+}
+
+/* header */
+.header__container {
+    position: fixed;
+    width: 1003px;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+    background-color: var(--main-background-color);
+    border-bottom: 10px ridge var(--main-border-color);
+}
+
+
+.header__logo {
+  width: 10%;
+  margin-right: auto;
+  
+}
+
+.header__logo-img {
+  width: 100%;
+}
+
+.header__h1 {
+  margin: 0;
+  align-self: flex-end;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 60px;
+}
+
+/* main */
+.main-container {
+    padding-top: 175px;
+}
+
+
+.table {
+    width: 100%;
+}
+
+.table__row > td {
+  width: 25%;
+  font-size: 26px;
+  text-align: center;
+  border-bottom: 3px solid var(--main-border-color) ;
+  cursor: pointer;
+}
+
+.table__img {
+  width: 70px;
+}

@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Skillbox_HomeWork_20.Models.Person>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/contactstyle.css">
+    <title>Данные контакта</title>
+</head>
+<body class="body">
+    <header>
+        <div class="container">
+            <div class="header__container">
+                <div class="header__logo">
+                    <img class="header__logo-img" src="~/img/@(ViewBag.SelectPerson.Id).png" alt="картинка контакта">
+                </div>
+                <h1 class="header__h1">
+                    @(ViewBag.SelectPerson.FirstName) @(ViewBag.SelectPerson.LastName)
+                </h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main-container">
+                <table class="table">
+                    <tr class="table__row">
+                        <td class="table__data-img"><img class="table__img" src="~/img/id.png"></td>
+                        <td class="table__data-field-name">ID контакта</td>
+                        <td class="table__date-info">@(ViewBag.SelectPerson.Id)</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td><img class="table__img" src="~/img/name.png"></td>
+                        <td class="table__data-field-name">Фамилия</td>
+                        <td class="table__date-info">@(ViewBag.SelectPerson.LastName)</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td><img class="table__img" src="~/img/name.png"></td>
+                        <td class="table__data-field-name">Имя</td>
+                        <td class="table__date-info">@(ViewBag.SelectPerson.FirstName)</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td><img class="table__img" src="~/img/name.png"></td>
+                        <td class="table__data-field-name">Отчество</td>
+                        <td class="table__date-info">@(ViewBag.SelectPerson.MiddleName)</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td><img class="table__img" src="~/img/smartphone.png"></td>
+                        <td class="table__data-field-name">Телефон</td>
+                        <td class="table__date-info">@(ViewBag.SelectPerson.Phone)</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td><img class="table__img" src="~/img/city.png"></td>
+                        <td class="table__data-field-name">Адрес</td>
+                        <td class="table__date-info">@(ViewBag.SelectPerson.Address)</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td><img class="table__img" src="~/img/Information.png"></td>
+                        <td class="table__data-field-name">Дополнительная информация</td>
+                        <td class="table__date-info">@(ViewBag.SelectPerson.Info)</td>
+                    </tr>
+                </table>
+            </div>
+            <a class="link-back" href="~/Home/Index">
+                <img class="link-back__img" src="~/img/back.png">
+                <span class="link-back__txt">Назад</span>
+            </a>
+        </div>
+    </main>
+</body>
+</html>
