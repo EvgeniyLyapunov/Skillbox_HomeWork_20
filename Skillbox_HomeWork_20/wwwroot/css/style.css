@@ -25,10 +25,6 @@ a {
 
 /* header */
 .header__container {
-    position: fixed;
-    width: 1003px;
-    top: 0;
-    z-index: 1000;
     display: flex;
     align-items: center;
     padding-top: 20px;
@@ -59,23 +55,24 @@ a {
 }
 
 /* main */
-.main-container {
-    padding-top: 175px;
-}
-
-
 .table {
     width: 100%;
 }
 
 .table__row > td {
-  width: 25%;
-  font-size: 26px;
-  text-align: center;
-  border-bottom: 3px solid var(--main-border-color) ;
-  cursor: pointer;
+    width: 25%;
+    font-size: 26px;
+    text-align: center;
+    border-bottom: 3px solid var(--main-border-color);
+    transition: font-size 0.3s linear, font-weight 0.3s linear;
+    cursor: pointer;
+}
+
+.table__data-id:hover {
+    font-size: 40px;
+    font-weight:900;
 }
 
 .table__img {
-  width: 70px;
+    width: 70px;
 }
